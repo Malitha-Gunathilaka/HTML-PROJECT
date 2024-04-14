@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Boarding Ads</title>
+<link rel="stylesheet" href="adsStyles.css">
+
+</head>
+<body>
+
+<h2>Create Boarding Ads</h2>
+
+<form action="submit_ad.php" method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <th>Property Type</th>
+            <td><input type="text" name="property_type" required></td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td><input type="text" name="address" required></td>
+        </tr>
+        <tr>
+            <th>Features</th>
+            <td><input type="text" name="features" required></td>
+        </tr>
+        <tr>
+            <th>Beds</th>
+            <td><input type="number" name="beds" required></td>
+        </tr>
+        <tr>
+            <th>Baths</th>
+            <td><input type="number" name="baths" required></td>
+        </tr>
+        <tr>
+            <th>Image 1</th>
+            <td><input type="file" name="image1" ></td>
+        </tr>
+        <tr>
+            <th>Image 2</th>
+            <td><input type="file" name="image2" ></td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td><textarea name="description" rows="4" required></textarea></td>
+        </tr>
+    </table>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

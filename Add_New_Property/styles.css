@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+h5{
+    color: #c62d2d;
+}
+h4{
+    color: #c62d2d;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    flex: 1; /* Take up available space */
+    font-weight: bold;
+    color: #333;
+}
+
+label i {
+    margin-left: 10px;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    flex: 2; /* Take up more space */
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+}
+
+button {
+    margin:  auto;
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    
+}
+
+/* Style the file input */
+input[type="file"] {
+    display: none;
+}
+
+/* Style the custom file input button */
+.custom-file-upload {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+/* Additional styling for Beds and Baths */
+.image {
+    display: flex;
+    flex: 1;
+}
+
+.image .form-group {
+    margin-right: 20px;
+}
+
+/* Style for radio buttons */
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Style for labels associated with radio buttons */
+.radio-label {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Ensuring radio buttons and labels are on the same line */
+.form-group-radio {
+    display: inline-block;
+    vertical-align: middle;
+    
+}

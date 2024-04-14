@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-pj+9iOe3NxvlK0z4QXlTtO89h6Gd3Y+Hk6SZZwcu6Ppu5w6JmQx3gJW/wKaUDJJIegxqm6P2QFN2+FZxVfKv7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>User Registration</h2>
+        <form id="registrationForm" action="register.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="form-group">
+                <label for="nic">NIC</label>
+                <input type="text" name="nic" id="nic" required>
+                <i class="fas fa-id-card"></i>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <div class="form-group1">
+                <input type="checkbox" name="agree" id="agree" required>
+                <label for="agree">I Agree to the Terms and Conditions</label>
+            </div>            
+            <div class="btn-group">
+                <button type="button" id="clearBtn">Clear</button>
+                <button type="submit" name="submit">sign up</button>                
+            </div>
+        </form>
+        <p class="Login_now">Already have an account? <a href="../login/login_form.html">Login now</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

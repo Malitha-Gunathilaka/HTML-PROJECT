@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add_New_Property</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add New Property</h2>
+        <form id="insertForm" action="insert.php" method="post" enctype="multipart/form-data">
+            <center>
+            <div class="form-group-radio">
+                <input type="radio" id="annex" name="propertyType" value="Annex" required>
+                <label class="radio-label" for="annex"><i class="fas fa-home"></i> Annex</label>
+                <input type="radio" id="boardingHouse" name="propertyType" value="Boarding House" required>
+                <label class="radio-label" for="boardingHouse"><i class="fas fa-home"></i> Boarding House</label>
+            </div>
+            </center>
+            <br>
+            <div class="form-group">
+                <label for="title"><i class="fas fa-heading"></i> Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="address"><i class="fas fa-map-marker-alt"></i> Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <!-- <div class="form-group">
+                <label for="features"><i class="fas fa-info-circle"></i> Features:</label>
+                <input type="text" id="features" name="features" required>
+            </div> -->
+            <div class="beds-baths-group">
+            <div class="form-group">
+                <label for="beds"><i class="fas fa-bed"></i> Beds:</label>
+                <input type="number" id="beds" name="beds" required>
+            </div>
+            <div class="form-group">
+                <label for="baths"><i class="fas fa-bath"></i> Baths:</label>
+                <input type="number" id="baths" name="baths" required>
+            </div>
+            </div>
+            <h5> <center>Two image are Required</center> </h5>
+        <div class="image">
+            <div class="form-group">
+                <label for="image1"><i class="fas fa-image"></i> Image1</label>
+                <input type="file" id="image1" name="image1" accept="image/jpeg, image/png, image/gif" required>
+            </div>
+            <div class="form-group">
+                <label for="image2"><i class="fas fa-image"></i> Image2</label>
+                <input type="file" id="image2" name="image2" accept="image/jpeg, image/png, image/gif" required> 
+            </div>
+            <div class="form-group">
+                <label for="image3"><i class="fas fa-image"></i> Image3</label>
+                <input type="file" id="image3" name="image3" accept="image/jpeg, image/png, image/gif" >
+            </div>
+            <div class="form-group">
+                <label for="image4"><i class="fas fa-image"></i> Image4</label>
+                <input type="file" id="image4" name="image4" accept="image/jpeg, image/png, image/gif" >
+            </div>
+        </div>
+            <div class="form-group">
+                <label for="Price_Range"><i class="fas fa-dollar-sign"></i> Price_Range:</label>
+                <input type="text" id="Price_Range" name="Price_Range" required>
+            </div>
+            <div class="form-group">
+                <label for="description"><i class="fas fa-align-left"></i> Description:</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <h4> <center>Owner Contact Details</center> </h4>
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone"><i class="fas fa-phone"></i> Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <button type="reset" id="clearBtn"><i class="fas fa-times"></i> Clear</button>
+                <button type="submit"><i class="fas fa-plus"></i> Submit</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            var image1 = document.getElementById("image1").value;
+            var image2 = document.getElementById("image2").value;
+            
+            if (image1 === "" || image2 === "") {
+                alert("Please provide both Image 1 and Image 2.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

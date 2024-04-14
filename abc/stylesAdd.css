@@ -1,0 +1,114 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 25%;
+}
+
+.ad-cell {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  max-width: 800px; /* Adjust as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ad-details {
+  flex: 1;
+  margin-left: 20px;
+  text-align: left; /* Align details to the left */
+}
+
+.ad-image-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.ad-image {
+  width: 500px;
+  height: auto; /* Medium size */
+  margin-bottom: 15px;
+  display: none; /* Initially hide all images */
+}
+
+.image-slider {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slider-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: gray;
+}
+
+
+/* CSS code for styling */
+
+table {
+  width: 600px;
+  border-collapse: collapse;
+  margin-right: 75px;
+}
+
+td {
+  padding: 10px;
+  vertical-align: top; /* Align content to the top of the cell */
+}
+
+.image-column {
+  width: 50%;
+}
+
+.details-column {
+  width: 50%;
+}
+
+
+.ad-image-container {
+  position: relative;
+}
+
+
+/* style for search */
+.search-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type=text] {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  padding: 10px 20px;
+  background-color: #1E90FF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type=submit]:hover {
+  background-color: #2166fc;
+}

@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: "Times New Roman", Times, Fantasy;
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 0px 10px 20px;
+    /* text-align: left; */
+}
+
+.Hlbutton{
+    font-family: "Times New Roman", Times, Fantasy;
+    font-size: 15px;
+    background-color: #2f2b2b;
+    border: none;
+    padding: 5px 5px;
+    color: #fff;
+    position: absolute; 
+    top: 20px;
+    right:150px ;
+    
+}
+.Hbutton{
+    font-family: "Times New Roman", Times, Fantasy;
+    font-size: 15px;
+    background-color: #2f2b2b;
+    border: none;
+    padding: 5px 5px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    }
+    nav {
+        text-align: center;
+        /* position:fixed; */
+        top:67px;
+        left: 0;
+        right: 0;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        
+    }
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.btnB {
+
+    border-radius: 15px 50px;
+    background: url(paper.gif);
+    display: inline-block;
+    padding: 40px 70px;
+    /* background-color: #000000; */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 26px;
+    margin-right: 10px;
+}
+.btnA {
+
+    border-radius: 15px 50px;
+    background: url(paper.gif);
+    display: inline-block;
+    padding: 40px 70px;
+    /* background-color: #000000; */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.selected {
+    background-color: #555 !important;
+}
+table {
+
+    width: 80%
+}
+
